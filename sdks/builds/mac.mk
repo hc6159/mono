@@ -133,7 +133,7 @@ mac-macarm64_SYSROOT=$(mac_sysroot) -mmacosx-version-min=$(MACOS_VERSION_MIN)
 mac-cross64_SYSROOT=$(mac_sysroot) -mmacosx-version-min=$(MACOS_VERSION_MIN)
 
 $(eval $(call MacTemplate,mac64,x86_64,$(XCODE_DIR)))
-$(eval $(call MacTemplate,macarm64,arm64,$(XCODE_DIR)))
+$(eval $(call MacTemplate,macarm64,aarch64,$(XCODE_DIR))) 
 
 $(eval $(call MacCrossTemplate,cross64,x86_64,aarch64-apple-darwin20.0.0,target64,llvm-llvm64,aarch64-apple-darwin20,$(mac_sysroot_path)))
 
